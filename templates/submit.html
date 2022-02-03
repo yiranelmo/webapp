@@ -1,0 +1,26 @@
+<!-- The Submit Page Extended from base.html -->
+{% extends 'base.html' %}
+
+<!-- Submit Page Title-->
+{% block header %}
+  <h1>{% block title %}Submit{% endblock %}</h1>
+{% endblock %}
+
+<!-- Submit page fot submit message and name -->
+{% block content %}
+    <br>
+    <form method = "post">
+      <label for = "message" > Your message: </label>
+      <input type = "text" name = "message" id = "message">
+      <br>
+      <label for = "handle" > Your name or handle: </label>
+      <input type = "text" name = "handle" id = "handle">
+      <br>
+      <input type = "submit" value = "Submit message">
+    </form>
+
+    <!-- return information after submitted -->
+    {% if submitted %}
+      <b>Thank you for submitting a message!</b>
+    {% endif %}
+{% endblock %}

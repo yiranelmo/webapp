@@ -1,0 +1,25 @@
+<!doctype html>
+
+<!-- loading style.css -->
+<link rel = "stylesheet" href = "{{ url_for('static', filename='style.css') }}">
+<!-- webapp title -->
+<title>{% block title %}{% endblock %} Blog Post 2</title>
+
+<!-- Web page -->
+<nav>
+  <h1>Elmo's Message Bank</h1>
+  <ul>
+    <li><a href = "{{ url_for('submit') }}" > Submit a Message</a></li>
+    <li><a href = "{{ url_for('view') }}" > View Messages</a></li>
+  </ul>
+</nav>
+
+<section class = "content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}
+    <br>
+    <p> Submit a message and view messages in this message bank!</p>
+  {% endblock %}
+</section>

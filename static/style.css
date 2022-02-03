@@ -1,0 +1,30 @@
+html {
+    font-family: fantasy;
+    padding: 1rem;
+    font-size: large;
+    background: rgb(229, 204, 255);
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(16, 11, 11);
+    font-family: fantasy;
+    font-size: xx-large;
+    margin: 2rem 2;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem;
+}
+
+a {
+    color: rgb(9, 79, 210);
+    text-decoration: none;
+}
